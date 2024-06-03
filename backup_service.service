@@ -1,0 +1,16 @@
+[Unit]
+Description=MySQL Backup Service
+After=docker.service
+Requires=docker.service
+
+[Service]
+ExecStart=/path/to/backup_script.sh
+Restart=always
+RestartSec=10
+User=your_user_name
+WorkingDirectory=/path/to/
+StandardOutput=append:/var/log/mysql_backup.log
+StandardError=append:/var/log/mysql_backup_error.log
+
+[Install]
+WantedBy=multi-user.target
