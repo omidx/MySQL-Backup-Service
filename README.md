@@ -9,7 +9,7 @@ This guide provides step-by-step instructions to set up a MySQL backup script us
 #### Step 1: Download the Backup Script ####
 Clone the backup script repository from the following GitHub link:
 ```bash
-git clone https://github.com/omidx/repository.git
+git clone [https://github.com/omidx/repository.git](https://github.com/omidx/MySQL-Backup-Service.git)
 ```
 Once downloaded, make the script executable:
 ```bash
